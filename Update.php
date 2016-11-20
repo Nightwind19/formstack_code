@@ -10,16 +10,16 @@
 
 <body>
 </br>
-    <p>Create New User Account</p>
+<p>Update User Information Page</p>
 </br>
-    <a href="Index.php"><button>Create</button></a>
+<a href="Index.php"><button>Create</button></a>
     <a href="Read.php"><button>Read</button></a>
     <a href="Update.php"><button>Update</button></a>
     <a href="Delete.php"><button>Delete</button></a>
 </br>
 </br>
 
-<form action="createEntry.php" method="post">
+<form action="updateUser.php" method="post">
     First name:</br>
     <input type="text" name="firstname"></br></br>
     Last name:</br>
