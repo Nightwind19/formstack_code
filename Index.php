@@ -11,6 +11,8 @@
 <body>
 </br>
     <p>Create New User Account</p>
+	
+
 </br>
     <a href="Index.php"><button>Create</button></a>
     <a href="Read.php"><button>Read</button></a>
@@ -27,7 +29,7 @@
     Email:</br>
     <input type="text" name="email"></br></br>
     Password:</br>
-    <input type="text" name="email"></br></br>
+    <input type="text" name="password"></br></br>
     <input type="submit">;
 </form>
 </body>

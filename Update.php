@@ -19,7 +19,7 @@
 </br>
 </br>
 
-<form action="updateUser.php" method="post">
+<form action="userUpdate.php" method="post">
     First name:</br>
     <input type="text" name="firstname"></br></br>
     Last name:</br>
@@ -27,7 +27,7 @@
     Email:</br>
     <input type="text" name="email"></br></br>
     Password:</br>
-    <input type="text" name="email"></br></br>
+    <input type="text" name="password"></br></br>
     <input type="submit">;
 </form>
 </body>
