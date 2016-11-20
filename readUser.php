@@ -37,16 +37,13 @@ $dbname = "myDB";
     $sql = "SELECT firstname, lastname, email, password  FROM userInfo WHERE firstname = '$_POST[firstname]' AND lastname = '$_POST[lastname]'";
     $result = $conn->query($sql);
 
-    if ($result->num_rows > 0) 
-	  {
+    if ($result->num_rows > 0) {
     // output userInfo
          while($row = $result->fetch_assoc()) 
 	      {
              echo "First name: " . $row["firstname"]. "</br> ". " Last Name: " . $row["lastname"]. "</br> " . "Email:  " .  $row["email"]. "</br> " . "Password:  ". $row["password"]. "<br>";
           }
-      } 
-	else 
-	 {
+      } else {
     echo "0 results";
      }
 $conn->close();

@@ -36,11 +36,11 @@ if ($conn->connect_error) {
 
 $sql = "UPDATE userInfo SET  email='$_POST[email]', password='$_POST[password]' WHERE firstname = '$_POST[firstname]' AND lastname = '$_POST[lastname]'";
 
-if ($conn->query($sql) === TRUE) {
-    echo "Record updated successfully";
-} else {
-    echo "Error updating record: " . $conn->error;
-}
+     if ($conn->query($sql) === TRUE) {
+          echo "Record updated successfully";
+     } else {
+         echo "Error updating record: " . $conn->error;
+     }
 
 $conn->close();
 ?>

@@ -37,12 +37,9 @@
           VALUES
      ('$_POST[firstname]','$_POST[lastname]','$_POST[email]','$_POST[password]')";
  
-    if ($conn->query($sql) === TRUE) 
-	    {
+    if ($conn->query($sql) === TRUE) {
              echo "New record created successfully";
-        } 
-    else 
-	   {
+        }  else {
              echo "Error: " . $sql . "<br>" . $conn->error;
        }
 
