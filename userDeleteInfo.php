@@ -15,18 +15,17 @@
 </br>
 </br>
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "myDB";
-
-// Create connection
-    $conn = new mysqli($servername, $username, $password, $dbname);
-// Check connection
-    if ($conn->connect_error)  
-      {
-    die("Connection failed: " . $conn->connect_error);
-     } 
+    /**
+    *require("dbVariables.php");
+	*Having the variables in a seperate file will allow the programmer to change the databases easily by updating one file
+    */
+	require("dbVariables.php");
+	
+    $conn = new mysqli($host, $username, $password, $db_name);
+           if ($conn->connect_error)
+			   {
+                    die("Connection failed: " . $conn->connect_error);
+               } 
 
     $sql = "DELETE FROM userInfo WHERE email = '$_POST[email]'";
     $result = $conn->query($sql);
@@ -39,7 +38,8 @@ $dbname = "myDB";
 	{
         echo "Error updating record: " . $conn->error;
     }
-$conn->close();
+	
+    $conn->close();
 ?>
 </body>
 </html>

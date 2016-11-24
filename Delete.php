@@ -18,7 +18,9 @@
     <a href="Delete.php"><button>Delete</button></a>
 </br>
 </br>
-
+   <!--
+     *This will make the form to delete the user info based on first and last name
+   -->
 <form action="userDeleteInfo.php" method="post">
     First name:</br>
     <input type="text" name="firstname"></br></br>
