@@ -3,15 +3,20 @@
     $username = "root";
     $password = "";
 
-    // Create connection
+    /**
+	 *Create connection
+	*/
     $conn = new mysqli($servername, $username, $password);
-    // Check connection
+	/**
+     *Check connection
+	*/
     if ($conn->connect_error) 
 	{
       die("Connection failed: " . $conn->connect_error);
     } 
-
-    // Create database
+     /**
+      *Create database
+	 */
     $sql = "CREATE DATABASE myDB";
 	
      if ($conn->query($sql) === TRUE) 
