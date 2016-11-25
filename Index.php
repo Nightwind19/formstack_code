@@ -21,7 +21,7 @@
 </br>
 </br>
 
-<form action="<?php echo htmlspecialchars(createEntry.php);?>" method="post">
+<form action="createEntry.php" method="post">
     First name:</br>
     <input type="text" name="firstname"></br></br>
     Last name:</br>
